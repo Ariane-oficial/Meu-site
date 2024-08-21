@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", cursive;
+    font-optical-sizing: auto;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background:#0D0D0D;
+   
+}
+.logo{
+    width: 28%;
+   
+}
+
+.list {
+    flex:1;
+    text-align: right;
+   
+}
+.list ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px 50px;
+    display: inline-block;
+}
+.list ul li a {
+    color:#F21BA7;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 22px;
+}
+.active{
+    color:white !important;
+}
+.text {
+    max-width: 600px;
+    padding: 10px 60px;
+    margin-left: 200px;
+    transform: translateY(90px);
+
+  
+}
+.text h2 {
+    font-size: 125px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    font-family: "New Rocker", sans-serif;
+  
+}
+.text span {
+    color:#0511F2;
+    font-weight: 900;
+}
+.text p {
+    padding: 10px 0;
+}
+.text{
+    color:white;
+   
+}
+.btn {
+    padding: 15px 35px;
+    background: linear-gradient(#D90479,#F222BB,#0511F2,#025373);
+    color:white;
+    border:0;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+.img{
+    position: absolute;
+    right: 0;
+    top:10px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img{
+    width: 22%;
+    margin-right: 18%;
+    margin-top: 15%;
+   ;
+    
+}
+.circle {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#D90479,#F222BB,#0511F2,#025373);
+    clip-path: circle(600px at right 800px);
+}
+
+.tick{
+    position: absolute;
+    right: 0;
+    top:250px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tick{
+    width: 22%;
+    margin-right: 0%;
+    margin-top: 2%;
+    animation: zoomIn 2s ease forwards,floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    transform: translateY(90px);
+
+    
+}
+
+
+@keyframes  slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes  zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
